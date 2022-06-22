@@ -1,12 +1,10 @@
 # tRomics (!!! under development !!!)
 
 <!-- badges: start -->
-[![R CMD Check via {tic}](https://github.com/miracum/clearly-tromics/workflows/R%20CMD%20Check%20via%20{tic}/badge.svg?branch=master)](https://github.com/miracum/clearly-tromics/actions)
-[![linting](https://github.com/miracum/clearly-tromics/workflows/lint/badge.svg?branch=master)](https://github.com/miracum/clearly-tromics/actions)
-[![test-coverage](https://github.com/miracum/clearly-tromics/workflows/test-coverage/badge.svg?branch=master)](https://github.com/miracum/clearly-tromics/actions)
-[![codecov](https://codecov.io/gh/miracum/clearly-tromics/branch/master/graph/badge.svg)](https://codecov.io/gh/miracum/clearly-tromics)
-[![pipeline status](https://gitlab.miracum.org/clearly/tromics/badges/master/pipeline.svg)](https://gitlab.miracum.org/clearly/tromics/commits/master)
-[![coverage report](https://gitlab.miracum.org/clearly/tromics/badges/master/coverage.svg)](https://gitlab.miracum.org/clearly/tromics/commits/master)
+[![R CMD Check via {tic}](https://github.com/kapsner/tromics/workflows/R%20CMD%20Check%20via%20{tic}/badge.svg?branch=master)](https://github.com/kapsner/tromics/actions)
+[![linting](https://github.com/kapsner/tromics/workflows/lint/badge.svg?branch=master)](https://github.com/kapsner/tromics/actions)
+[![test-coverage](https://github.com/kapsner/tromics/workflows/test-coverage/badge.svg?branch=master)](https://github.com/kapsner/tromics/actions)
+[![codecov](https://codecov.io/gh/kapsner/tromics/branch/master/graph/badge.svg)](https://codecov.io/gh/kapsner/tromics)
 <!-- badges: end -->
 
 `tRomics` is an R package that provides a Shiny web application for integrative *in silico* analysis for deciphering global transcriptome profiling data. It was developed as part of the publication "Integrative bioinformatics analyses of global transcriptome data decipher novel molecular insights into cardiac anti-fibrotic therapies" (Fuchs, Kreutzer et al.) which is currently under review in International Journal of Molecular Sciences. 
@@ -16,8 +14,8 @@
 You can install *tRomics* with the following commands in R:
 
 ```r
-install.packages("devtools")
-devtools::install_github("miracum/clearly-tromics")
+install.packages("remotes")
+remotes::install_github("kapsner/tromics")
 ```
 # Start shiny application
 
