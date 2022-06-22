@@ -82,6 +82,32 @@ usethis::use_package("processx", type="Suggests")
 usethis::use_package("lintr", type="Suggests")
 
 
+# define remotes
+remotes_append_vector <- NULL
+
+# Development packages
+stats_tag <- "development" # e.g. "v0.1.7", "development" or "cran"
+if (stats_tag == "cran") {
+  install.packages("gtools")
+} else{
+  remotes::install_github("r-gregmisc/gtools")
+  add_remotes <- "r-gregmisc/gtools"
+  if (is.null(remotes_append_vector)) {
+    remotes_append_vector <- add_remotes
+  } else {
+    remotes_append_vector <- c(remotes_append_vector, add_remotes)
+  }
+}
+
+# finally, add remotes (if required)
+if (!is.null(remotes_append_vector)) {
+  desc::desc_set_remotes(
+    remotes_append_vector,
+    file = usethis::proj_get()
+  )
+}
+
+
 # buildignore
 usethis::use_build_ignore(".gitlab-ci.yml")
 usethis::use_build_ignore("data-raw")
