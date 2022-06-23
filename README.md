@@ -1,6 +1,7 @@
 # tRomics (!!! under development !!!)
 
 <!-- badges: start -->
+[![](https://img.shields.io/badge/doi-10.3390/ijms21134727-yellow.svg)](https://doi.org/10.3390/ijms21134727)
 [![R CMD Check via {tic}](https://github.com/kapsner/tromics/workflows/R%20CMD%20Check%20via%20{tic}/badge.svg?branch=master)](https://github.com/kapsner/tromics/actions)
 [![linting](https://github.com/kapsner/tromics/workflows/lint/badge.svg?branch=master)](https://github.com/kapsner/tromics/actions)
 [![test-coverage](https://github.com/kapsner/tromics/workflows/test-coverage/badge.svg?branch=master)](https://github.com/kapsner/tromics/actions)

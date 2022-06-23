@@ -194,3 +194,5 @@ mirna_example_data <- tRomics::data_input(
 
 usethis::use_data(mirna_countdata, internal = F, overwrite = T)
 usethis::use_data(mirna_metadata, internal = F, overwrite = T)
+
+badger::badge_doi("10.3390/ijms21134727", color = "yellow")
